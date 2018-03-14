@@ -8,15 +8,15 @@ no-post-nav: true
 
 # 从一个Git仓库提交代码到另一个Git仓库
 
-1. 在Git上创建一个新的仓库 **repo**
+1. 在Git上创建一个新的仓库 **repo_new**
 
-2. 将仓库 **repo**  `clone`至本地
+2. 将需要同步代码的仓库 **repo**  `clone`至本地
 
 3. （按照惯例）修改默认remote名称 origin -> upstream
 
    `git remote rename origin upstream`
 
-4. 将新建仓库**repo**的URL添加至本地工作仓库的remote中
+4. 将新建仓库**repo_new**的URL添加至本地工作仓库的remote中
 
    `git remote add origin ANOTHER_REPO_URL`
 
