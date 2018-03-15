@@ -9,7 +9,7 @@
 title: A BLOG
 name: xpigm 
 email: xpigm@outlook.com
-location: Beijing
+#location: Beijing
 #company: MyCompany
 #company_url: my_company_website
 description: description_of_your_web_site
@@ -48,8 +48,33 @@ kramdown:
   input: GFM
   enable_coderay: true
 
-# Disque
-disque: my_disque_settings # ex. httpdongchuangithubio.disqus.com
+# ---------------- #
+#      Comments    #
+# ---------------- #
+# support provider: disqus, gitment, gitalk
+comments_provider: gitalk
+
+# https://disqus.com
+disqus:
+  username: xpigm
+# 在使用其它评论组件时可点击显示 Disqus
+lazy_load_disqus : true  
+    
+# https://imsun.net/posts/gitment-introduction/
+gitment:
+  owner: xpigm
+  repo: xpigm.github.io
+  oauth:
+    client_id: 5df79a27aac31c441a6f
+    client_secret: 0274d85cd24ea36edaddbc5bd283b2b5b5629ac0
+        
+# https://github.com/gitalk/gitalk#install
+gitalk:
+  owner: xpigm
+  repo: xpigm.github.io
+  clientID: 5df79a27aac31c441a6f
+  clientSecret: 0274d85cd24ea36edaddbc5bd283b2b5b5629ac0
+    
 
 # Pagination
 paginate: 10
@@ -73,9 +98,9 @@ navs:
     href: /bookmark
     label: Bookmark
 
-#  -
-#    href: /about
-#    label: About
+  -
+    href: /about
+    label: About
 
 # Sidebar to show popular repo
 side_bar_repo_limit: 5 # Number of repos to show
@@ -92,3 +117,4 @@ skill_software_keywords: [Java, C, C++, Qt, Python, MySQL, Oracle, SQLite, PL/SQ
 skill_j2ee_keywords: [Spring, Struct, Hibernet, MyBatis, JSP]
 skill_web_keywords: [HTML, CSS, JS, JQuery, Ajax, AngularJS, NodeJS, ExpressJS, MongoDB, Redis, PHP, Symfony, Boostrap]
 skill_mobile_app_keywords: [Android, Sketch UI Desgin]
+

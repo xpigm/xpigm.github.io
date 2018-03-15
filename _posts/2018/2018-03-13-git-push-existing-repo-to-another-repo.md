@@ -4,6 +4,7 @@ title:  从一个Git仓库提交代码到另一个Git仓库
 categories: tool
 tags: [git]
 no-post-nav: true
+comments: true
 ---
 
 # 从一个Git仓库提交代码到另一个Git仓库
