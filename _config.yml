@@ -7,12 +7,13 @@
 
 # Site settings
 title: A BLOG
-name: xpigm 
+name: XPIGM
 email: xpigm@outlook.com
 #location: Beijing
 #company: MyCompany
 #company_url: my_company_website
-description: description_of_your_web_site
+description: java
+aword: The unexamined life is not worth living.
 favicon: favicon.png # Image must be in assets/images
 
 
