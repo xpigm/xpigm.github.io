@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  Java异常：Not enough variable values available to expand 'var'
+title:  Java异常：Not enough variable values available to expand "var"
 categories: exception
 tags: [java, pit, experience]
 no-post-nav: true
 comments: true
 ---
 
-# Java异常：Not enough variable values available to expand 'var'
+# Java异常：Not enough variable values available to expand "var"
 
 当你使用 MockMvc 进行单元测试或者 使用 RestTemplate 访问 rest接口时
 
