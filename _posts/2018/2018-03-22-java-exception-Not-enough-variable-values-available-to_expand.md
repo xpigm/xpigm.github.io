@@ -23,12 +23,12 @@ public void testREST() throws Exception {
 
 ```
 
-
 很有可能会遇到类似这种错误，确切来说肯定会遇到这种错误
 `Not enough variable values available to expand 'var'`
 
 从错误信息来看，好像是var被当作一个变量了。
 通过调试发现，会调用这么一段代码
+
 ```java
 // Static expansion helpers
 
@@ -60,8 +60,7 @@ static String expandUriComponent(String source, UriTemplateVariables uriVariable
 }
 ```
 
-已经很明显了，能用模式与 `\{([^/]+?)\}` 匹配的value都会被视为变量，因此 `{var}`被作为了变量（占位符），解析的时候发生了异常。
-
+可以看出，能与 *NAMES_PATTERN* `\{([^/]+?)\}` 匹配的value都会被视为变量，因此 `{var}`被作为了变量（占位符），解析的时候发生了异常。
 
 
 **解决方案**：
@@ -79,4 +78,3 @@ static String expandUriComponent(String source, UriTemplateVariables uriVariable
     mockMvc.perform(MockMvcRequestBuilders.get("/zj/getDatailOfTemplate?key={key}"))
    ```
 
-   ​
