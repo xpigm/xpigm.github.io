@@ -1,6 +1,5 @@
 {
   "name": "hover",
-  "version": "2.1.1",
   "homepage": "http://ianlunn.github.io/Hover",
   "authors": [
     "Ian Lunn <hello@ianlunn.co.uk>"
@@ -17,7 +16,7 @@
     "CSS Hover Effects",
     "CSS3 Hover Effects"
   ],
-  "license": "MIT",
+  "license": "SEE LICENSE IN LICENSE.txt",
   "private": false,
   "ignore": [
     "**/.*",
@@ -26,12 +25,14 @@
     "test",
     "tests"
   ],
-  "_release": "2.1.1",
+  "version": "2.3.1",
+  "_release": "2.3.1",
   "_resolution": {
     "type": "version",
-    "tag": "v2.1.1",
-    "commit": "7b2597e011c3495511f93cbca4e148308e0df1c7"
+    "tag": "2.3.1",
+    "commit": "7d89804e32bcf71f206f0ca5029d3983fb7df8cc"
   },
   "_source": "https://github.com/IanLunn/Hover.git",
-  "_target": "^2.0.2"
+  "_target": "^2.0.2",
+  "_originalSource": "hover"
 }
