@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Java异常：Not enough variable values available to expand "var"
+title:  Java异常：Not enough variable values available to expand 'var'
 categories: exception
 tags: [java, pit, experience]
 no-post-nav: true
