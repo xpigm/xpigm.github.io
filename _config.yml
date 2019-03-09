@@ -7,7 +7,7 @@
 
 # Site settings
 title: A BLOG
-name: XPIGM
+name: OldMENG
 email: xpigm@outlook.com
 #location: Beijing
 #company: MyCompany
@@ -23,7 +23,7 @@ github_url: https://github.com/xpigm
 # The base hostname & protocol for your site
 # For local test, please use http://localhost:4000
 # For production, use your github page url. ex. http://dongchuan.github.io
-url: http://xpigm.github.io
+url: https://xpigm.github.io
 
 ## Gem
 gems:
