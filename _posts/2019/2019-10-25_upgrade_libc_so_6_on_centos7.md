@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  centos7升级libc.so.6
-categories: 
+categories: other 
 tags: []
 no-post-nav: true
 comments: true

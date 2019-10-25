@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  解决centos7下libc.so.6被误删
-categories: 
+categories: other 
 tags: []
 no-post-nav: true
 comments: true
