@@ -2,7 +2,7 @@
 layout: post
 title:  Docker Compose构建ES集群
 categories: other 
-tags: []
+tags: [other]
 no-post-nav: true
 comments: true
 ---

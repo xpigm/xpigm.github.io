@@ -2,7 +2,7 @@
 layout: post
 title:  centos7升级libc.so.6
 categories: other 
-tags: []
+tags: [other]
 no-post-nav: true
 comments: true
 ---
