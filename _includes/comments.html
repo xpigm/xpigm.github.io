@@ -1,5 +1,5 @@
 {% if page.comments != false %}
-  {% if site.comments_provider != 'disqus' and site.lazy_load_disqus and site.disqus and site.disqus.username %}
+  {% if site.data.comments.comments_provider != 'disqus' and site.data.comments.lazy_load_disqus and site.data.comments.disqus and site.data.comments.disqus.username %}
     <a href="#" class="show_disqus_comment" onclick="return false;">Show Disqus Comments</a>
     <div id="disqus_thread"></div>
     <script>
@@ -17,7 +17,7 @@
                 var d = document, s = d.createElement('script');
                 s.type = 'text/javascript';
                 s.async = true;
-                var shortname = '{{ site.disqus.username }}';
+                var shortname = '{{ site.data.comments.disqus.username }}';
                 s.src = '//' + shortname + '.disqus.com/embed.js';
                 s.setAttribute('data-timestamp', +new Date());
                 (d.head || d.body).appendChild(s);
@@ -30,9 +30,9 @@
     <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
   {% endif %}
 
-  {% case site.comments_provider %}
+  {% case site.data.comments.comments_provider %}
     {% when 'disqus' %}
-      {% if site.disqus and site.disqus.username %}
+      {% if site.data.comments.disqus and site.data.comments.disqus.username %}
         {% assign load_disqus = true %}
         {% if load_disqus %}
           <div id="disqus_thread"></div>
@@ -46,7 +46,7 @@
               var d = document, s = d.createElement('script');
               s.type = 'text/javascript';
               s.async = true;
-              var shortname = '{{ site.disqus.username }}';
+              var shortname = '{{ site.data.comments.disqus.username }}';
               s.src = '//' + shortname + '.disqus.com/embed.js';
               s.setAttribute('data-timestamp', +new Date());
               (d.head || d.body).appendChild(s);
@@ -62,11 +62,11 @@
         <script>
         var gitment = new Gitment({
             id: '{{ page.url }}',
-            owner: '{{ site.gitment.owner }}',
-            repo: '{{ site.gitment.repo }}',
+            owner: '{{ site.data.comments.gitment.owner }}',
+            repo: '{{ site.data.comments.gitment.repo }}',
             oauth: {
-                client_id: '{{ site.gitment.oauth.client_id }}',
-                client_secret: '{{ site.gitment.oauth.client_secret }}',
+                client_id: '{{ site.data.comments.gitment.oauth.client_id }}',
+                client_secret: '{{ site.data.comments.gitment.oauth.client_secret }}',
             },
         })
         gitment.render('container')
@@ -77,15 +77,27 @@
         <script>
         var gitalk = new Gitalk({
             id: '{{ page.url }}',
-            clientID: '{{ site.gitalk.clientID }}',
-            clientSecret: '{{ site.gitalk.clientSecret }}',
-            repo: '{{ site.gitalk.repo }}',
-            owner: '{{ site.gitalk.owner }}',
-            admin: ['{{ site.gitalk.owner }}'],
+            clientID: '{{ site.data.comments.gitalk.clientID }}',
+            clientSecret: '{{ site.data.comments.gitalk.clientSecret }}',
+            repo: '{{ site.data.comments.gitalk.repo }}',
+            owner: '{{ site.data.comments.gitalk.owner }}',
+            admin: ['{{ site.data.comments.gitalk.owner }}'],
             labels: ['gitment'],
             perPage: 50,
         })
         gitalk.render('gitalk-container')
+        </script>
+    {% when 'valine' %}
+        <div id="comments"></div>
+        <script src="//cdn1.lncld.net/static/js/3.15.0/av-min.js"></script>
+        <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+        <script>
+          new Valine({
+              av: AV,
+              el: '#comments',
+              app_id: '{{ site.data.comments.valine.leancloud_appid }}',
+              app_key: '{{ site.data.comments.valine.leancloud_appkey }}'
+          });
         </script>
   {% endcase %}
 {% endif %}

@@ -41,6 +41,10 @@ excerpt_separator: "\n\n"
 
 source:      .
 destination: ./_site
+plugins_dir:  ./_plugins
+layouts_dir:  ./_layouts
+data_dir:     ./_data
+includes_dir: ./_includes
 
 quiet:    false
 defaults: []
@@ -49,34 +53,8 @@ kramdown:
   input: GFM
   enable_coderay: false #??
 
-# ---------------- #
-#      Comments    #
-# ---------------- #
-# support provider: disqus, gitment, gitalk
-comments_provider: disqus
 
-# https://disqus.com
-disqus:
-  username: xpigm
-# 在使用其它评论组件时可点击显示 Disqus
-lazy_load_disqus : true  
     
-# https://imsun.net/posts/gitment-introduction/
-gitment:
-  owner: xpigm
-  repo: xpigm.github.io
-  oauth:
-    client_id: 
-    client_secret: 
-
-# https://github.com/gitalk/gitalk#install
-gitalk:
-  owner: xpigm
-  repo: xpigm.github.io
-  clientID: 
-  clientSecret: 
-    
-
 # Pagination
 paginate: 10
 paginate_path: 'page:num'
