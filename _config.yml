@@ -53,7 +53,7 @@ kramdown:
 #      Comments    #
 # ---------------- #
 # support provider: disqus, gitment, gitalk
-comments_provider: gitalk
+comments_provider: disqus
 
 # https://disqus.com
 disqus:
@@ -66,15 +66,15 @@ gitment:
   owner: xpigm
   repo: xpigm.github.io
   oauth:
-    client_id: 5df79a27aac31c441a6f
-    client_secret: 0274d85cd24ea36edaddbc5bd283b2b5b5629ac0
-        
+    client_id: 
+    client_secret: 
+
 # https://github.com/gitalk/gitalk#install
 gitalk:
   owner: xpigm
   repo: xpigm.github.io
-  clientID: 5df79a27aac31c441a6f
-  clientSecret: 0274d85cd24ea36edaddbc5bd283b2b5b5629ac0
+  clientID: 
+  clientSecret: 
     
 
 # Pagination
