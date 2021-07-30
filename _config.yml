@@ -6,8 +6,8 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: '' #A BLOG
-name: '' #OldMENG
+title: '寒舍有茶' #A BLOG
+name: '寒舍有茶' #OldMENG
 email: xpigm@outlook.com
 #location: Beijing
 #company: MyCompany
@@ -119,5 +119,3 @@ skill_j2ee_keywords: [Spring, Struct, Hibernet, MyBatis, JSP]
 skill_web_keywords: [HTML, CSS, JS, JQuery, Ajax, AngularJS, NodeJS, ExpressJS, MongoDB, Redis, PHP, Symfony, Boostrap]
 skill_mobile_app_keywords: [Android, Sketch UI Desgin]
 
-
-theme: jekyll-theme-cayman
