@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  【看山是山】1.开篇
-categories: 看山是山
-tags: [看山是山]
+categories: KSSS
+tags: [KSSS]
 no-post-nav: true
 comments: true
 ---
